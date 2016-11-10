@@ -10,6 +10,14 @@
 		BAF2DE331DD44AB400A796DD /* TransitionManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF2DE291DD44AB300A796DD /* TransitionManager.framework */; };
 		BAF2DE381DD44AB400A796DD /* TransitionManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF2DE371DD44AB400A796DD /* TransitionManagerTests.swift */; };
 		BAF2DE3A1DD44AB400A796DD /* TransitionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF2DE2C1DD44AB300A796DD /* TransitionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAF2DE441DD44B0000A796DD /* PresentationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF2DE431DD44B0000A796DD /* PresentationType.swift */; };
+		BAF2DE461DD44B1A00A796DD /* PresentationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF2DE451DD44B1A00A796DD /* PresentationDirection.swift */; };
+		BAF2DE4C1DD44EE300A796DD /* TransitionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF2DE4B1DD44EE300A796DD /* TransitionSource.swift */; };
+		BAF2DE4E1DD44F5700A796DD /* TransitionDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF2DE4D1DD44F5700A796DD /* TransitionDestination.swift */; };
+		BAF2DE541DD454F200A796DD /* InteractiveTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF2DE531DD454F200A796DD /* InteractiveTransitioning.swift */; };
+		BAF2DE561DD4553100A796DD /* AnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF2DE551DD4553100A796DD /* AnimatedTransitioning.swift */; };
+		BAF2DE5A1DD457EC00A796DD /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF2DE591DD457EC00A796DD /* TransitionManager.swift */; };
+		BAF2DE5C1DD4582B00A796DD /* TransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF2DE5B1DD4582B00A796DD /* TransitioningDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +37,14 @@
 		BAF2DE321DD44AB400A796DD /* TransitionManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitionManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF2DE371DD44AB400A796DD /* TransitionManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionManagerTests.swift; sourceTree = "<group>"; };
 		BAF2DE391DD44AB400A796DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAF2DE431DD44B0000A796DD /* PresentationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationType.swift; sourceTree = "<group>"; };
+		BAF2DE451DD44B1A00A796DD /* PresentationDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationDirection.swift; sourceTree = "<group>"; };
+		BAF2DE4B1DD44EE300A796DD /* TransitionSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionSource.swift; sourceTree = "<group>"; };
+		BAF2DE4D1DD44F5700A796DD /* TransitionDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionDestination.swift; sourceTree = "<group>"; };
+		BAF2DE531DD454F200A796DD /* InteractiveTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveTransitioning.swift; sourceTree = "<group>"; };
+		BAF2DE551DD4553100A796DD /* AnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedTransitioning.swift; sourceTree = "<group>"; };
+		BAF2DE591DD457EC00A796DD /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		BAF2DE5B1DD4582B00A796DD /* TransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitioningDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +87,14 @@
 		BAF2DE2B1DD44AB300A796DD /* TransitionManager */ = {
 			isa = PBXGroup;
 			children = (
+				BAF2DE591DD457EC00A796DD /* TransitionManager.swift */,
+				BAF2DE5B1DD4582B00A796DD /* TransitioningDelegate.swift */,
+				BAF2DE4B1DD44EE300A796DD /* TransitionSource.swift */,
+				BAF2DE4D1DD44F5700A796DD /* TransitionDestination.swift */,
+				BAF2DE551DD4553100A796DD /* AnimatedTransitioning.swift */,
+				BAF2DE531DD454F200A796DD /* InteractiveTransitioning.swift */,
+				BAF2DE451DD44B1A00A796DD /* PresentationDirection.swift */,
+				BAF2DE431DD44B0000A796DD /* PresentationType.swift */,
 				BAF2DE2C1DD44AB300A796DD /* TransitionManager.h */,
 				BAF2DE2D1DD44AB400A796DD /* Info.plist */,
 			);
@@ -149,6 +173,7 @@
 					BAF2DE281DD44AB300A796DD = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = K6439SN8NA;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					BAF2DE311DD44AB400A796DD = {
@@ -198,6 +223,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF2DE441DD44B0000A796DD /* PresentationType.swift in Sources */,
+				BAF2DE4C1DD44EE300A796DD /* TransitionSource.swift in Sources */,
+				BAF2DE5C1DD4582B00A796DD /* TransitioningDelegate.swift in Sources */,
+				BAF2DE5A1DD457EC00A796DD /* TransitionManager.swift in Sources */,
+				BAF2DE561DD4553100A796DD /* AnimatedTransitioning.swift in Sources */,
+				BAF2DE461DD44B1A00A796DD /* PresentationDirection.swift in Sources */,
+				BAF2DE541DD454F200A796DD /* InteractiveTransitioning.swift in Sources */,
+				BAF2DE4E1DD44F5700A796DD /* TransitionDestination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +355,7 @@
 		BAF2DE3E1DD44AB400A796DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = K6439SN8NA;
@@ -334,6 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vicentesuarez.TransitionManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +376,7 @@
 		BAF2DE3F1DD44AB400A796DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = K6439SN8NA;
@@ -360,6 +396,7 @@
 		BAF2DE411DD44AB400A796DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = K6439SN8NA;
 				INFOPLIST_FILE = TransitionManagerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +409,7 @@
 		BAF2DE421DD44AB400A796DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = K6439SN8NA;
 				INFOPLIST_FILE = TransitionManagerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -400,6 +438,7 @@
 				BAF2DE3F1DD44AB400A796DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAF2DE401DD44AB400A796DD /* Build configuration list for PBXNativeTarget "TransitionManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +447,7 @@
 				BAF2DE421DD44AB400A796DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
