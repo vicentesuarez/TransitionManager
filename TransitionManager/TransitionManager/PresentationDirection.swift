@@ -6,7 +6,7 @@
 //  Copyright © 2016 Vicente Suarez. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 /// Represents the swipe origin to begin presentation of
 /// view controller

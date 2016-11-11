@@ -6,7 +6,7 @@
 //  Copyright © 2016 Vicente Suarez. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 /// Defines methods implemented by a presented view controller to animate presenting and dismissing.
 @objc public protocol TransitionDestination: class {
