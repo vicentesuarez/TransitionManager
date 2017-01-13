@@ -15,6 +15,7 @@
 		BAF280931E28C70A00D6D181 /* TransitionManagerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF280921E28C70A00D6D181 /* TransitionManagerDemoTests.swift */; };
 		BAF2809E1E28C70A00D6D181 /* TransitionManagerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF2809D1E28C70A00D6D181 /* TransitionManagerDemoUITests.swift */; };
 		BAF280AD1E28C7B500D6D181 /* TransitionManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF280AC1E28C7B500D6D181 /* TransitionManager.framework */; };
+		BAF280B01E28CBD700D6D181 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF280AF1E28CBD700D6D181 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		BAF2809D1E28C70A00D6D181 /* TransitionManagerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionManagerDemoUITests.swift; sourceTree = "<group>"; };
 		BAF2809F1E28C70A00D6D181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAF280AC1E28C7B500D6D181 /* TransitionManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TransitionManager.framework; path = Carthage/Build/iOS/TransitionManager.framework; sourceTree = "<group>"; };
+		BAF280AF1E28CBD700D6D181 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				BAF2807D1E28C70900D6D181 /* AppDelegate.swift */,
 				BAF2807F1E28C70900D6D181 /* ViewController.swift */,
+				BAF280AF1E28CBD700D6D181 /* MenuViewController.swift */,
 				BAF280811E28C70900D6D181 /* Main.storyboard */,
 				BAF280841E28C70900D6D181 /* Assets.xcassets */,
 				BAF280861E28C70900D6D181 /* LaunchScreen.storyboard */,
@@ -293,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAF280801E28C70900D6D181 /* ViewController.swift in Sources */,
+				BAF280B01E28CBD700D6D181 /* MenuViewController.swift in Sources */,
 				BAF2807E1E28C70900D6D181 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
