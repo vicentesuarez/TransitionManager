@@ -2,7 +2,7 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](./LICENSE)
 
-The Transition Manager is a swift framework that makes it easy to create custom iOS transitions.
+The Transition Manager is a Swift framework that makes it easy to create custom iOS transitions.
 
 ![Transition Manager Demo](media/TransitionManagerDemo.gif?raw=true "Transition Manager Demo")
 
@@ -54,7 +54,7 @@ class ViewController: UIViewController { }
 Implement the `TransitionDestination` protocol in the destination View Controller. The protocol requires implementing the `animationDuration` get only variable. Also, add the destination View Controller's view inside the `setupBeforePresenting(containerView:)` method.
 
 ```swift
-class ViewController: UIViewController: TransitionDestination {
+class DestinationViewController: UIViewController, TransitionDestination {
 
     var animationDuration: TimeInterval { return 0.3 }
 
@@ -70,12 +70,12 @@ class ViewController: UIViewController: TransitionDestination {
 }
 ```
 
-Next, implementing the `TransitionSource` protocol in the source View Controller. Initialize the `TransitionManager` inside of `viewDidLoad()`. Override `prepare(for segue:sender:)`, retrieve your destination View Controller and add it to the transition manager.
+Next, implement the `TransitionSource` protocol in the source View Controller. Initialize the `TransitionManager` inside of `viewDidLoad()`. Override `prepare(for segue:sender:)`, retrieve your destination View Controller and add it to the transition manager.
 
 ```swift
 import TransitionManager
 
-class ViewController: UIViewController, TransitionSource {
+class SourceViewController: UIViewController, TransitionSource {
 
     var transitionManager: TransitionManager!
     
@@ -85,8 +85,8 @@ class ViewController: UIViewController, TransitionSource {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let menuViewController = segue.destination as? MenuViewController {
-            transitionManager.setDestination(menuViewController)
+        if let destinationViewController = segue.destination as? DestinationViewController {
+            transitionManager.setDestination(destinationViewController)
         }
     }
 }
