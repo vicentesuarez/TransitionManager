@@ -17,7 +17,7 @@ class ViewController: UIViewController, TransitionSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        transitionManager = TransitionManager(source: self, presentationType: PresentationType.segue(presenting: "PresentMenuSegue", dismissing: "DismissMenuSegue"))
+        transitionManager = TransitionManager(source: self, presentationType: .segue(presenting: "PresentMenuSegue", dismissing: "DismissMenuSegue"))
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
