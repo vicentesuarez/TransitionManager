@@ -455,6 +455,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = TransitionManagerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = con.VicenteSuarez.TransitionManagerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -472,6 +473,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = TransitionManagerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = con.VicenteSuarez.TransitionManagerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -556,6 +558,7 @@
 				BAF280A41E28C70A00D6D181 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAF280A51E28C70A00D6D181 /* Build configuration list for PBXNativeTarget "TransitionManagerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +567,7 @@
 				BAF280A71E28C70A00D6D181 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAF280A81E28C70A00D6D181 /* Build configuration list for PBXNativeTarget "TransitionManagerDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -572,6 +576,7 @@
 				BAF280AA1E28C70A00D6D181 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
