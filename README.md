@@ -12,8 +12,8 @@ The Transition Manager is a Swift framework that makes it easy to create custom 
 - iOS 8.0
 
 ### Build Time:
-- Xcode 8.0
-- Swift 3.0
+- Xcode 8.2.1
+- Swift 3.0.2
 
 ## Installation
 
